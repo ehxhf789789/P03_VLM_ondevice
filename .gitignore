@@ -1,0 +1,31 @@
+# Dependencies
+node_modules/
+
+# Build
+dist/
+target/
+
+# Models (large binary files)
+models/*.onnx
+models/*.json
+models/*.txt
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Environment
+.env
+.env.*
+
+# Claude Code
+.claude/
+
+# Tauri
+src-tauri/gen/
