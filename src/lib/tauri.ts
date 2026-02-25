@@ -38,6 +38,11 @@ export async function analyzeImage(
   });
 }
 
+/** 이미지 미리보기용 base64 data URL 생성 */
+export async function readImagePreview(imagePath: string): Promise<string> {
+  return invoke<string>("read_image_preview", { imagePath });
+}
+
 /** 분석 히스토리 조회 */
 export async function getHistory(): Promise<AnalysisResult[]> {
   return invoke<AnalysisResult[]>("get_history");

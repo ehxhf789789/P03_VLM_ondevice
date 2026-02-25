@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { open } from "@tauri-apps/plugin-dialog";
 import { useTranslation } from "../i18n";
 import { ImagePreview } from "../components/ImagePreview";
-import { convertFileSrc } from "@tauri-apps/api/core";
+import { readImagePreview } from "../lib/tauri";
 
 export function CapturePage() {
   const { t } = useTranslation();
@@ -23,7 +23,8 @@ export function CapturePage() {
     });
     if (file) {
       setImagePath(file);
-      setPreviewSrc(convertFileSrc(file));
+      const dataUrl = await readImagePreview(file);
+      setPreviewSrc(dataUrl);
     }
   };
 

@@ -1,4 +1,5 @@
 use std::fs;
+use base64::Engine;
 use tauri::ipc::Channel;
 use tauri::State;
 
@@ -126,6 +127,27 @@ pub async fn analyze_image(
     });
 
     Ok(result)
+}
+
+/// 이미지 파일을 읽어 base64 data URL로 반환한다.
+#[tauri::command]
+pub fn read_image_preview(image_path: String) -> Result<String, String> {
+    let bytes = fs::read(&image_path)
+        .map_err(|e| format!("Failed to read image: {}", e))?;
+    let ext = std::path::Path::new(&image_path)
+        .extension()
+        .and_then(|e| e.to_str())
+        .unwrap_or("png")
+        .to_lowercase();
+    let mime = match ext.as_str() {
+        "jpg" | "jpeg" => "image/jpeg",
+        "png" => "image/png",
+        "webp" => "image/webp",
+        "bmp" => "image/bmp",
+        _ => "image/png",
+    };
+    let b64 = base64::engine::general_purpose::STANDARD.encode(&bytes);
+    Ok(format!("data:{};base64,{}", mime, b64))
 }
 
 /// 분석 히스토리를 반환한다.

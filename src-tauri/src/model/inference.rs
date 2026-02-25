@@ -22,23 +22,39 @@ pub struct SmolVlmEngine {
 }
 
 impl SmolVlmEngine {
+    /// ONNX 세션 빌더를 생성한다. Android에서는 스레드 수를 제한한다.
+    fn create_session_builder() -> Result<ort::session::builder::SessionBuilder, ort::Error> {
+        let builder = Session::builder()?;
+        #[cfg(target_os = "android")]
+        let builder = builder.with_intra_threads(2)?;
+        Ok(builder)
+    }
+
     /// 모델 디렉토리에서 세 개의 ONNX 세션을 로드한다.
     pub fn load(model_dir: &Path) -> Result<Self, String> {
         log::info!("Loading ONNX sessions from {:?}", model_dir);
 
-        let vision_encoder = Session::builder()
+        let vision_encoder = Self::create_session_builder()
             .and_then(|b| b.commit_from_file(model_dir.join("vision_encoder.onnx")))
             .map_err(|e| format!("Failed to load vision_encoder: {}", e))?;
 
-        let embed_tokens = Session::builder()
+        let embed_tokens = Self::create_session_builder()
             .and_then(|b| b.commit_from_file(model_dir.join("embed_tokens.onnx")))
             .map_err(|e| format!("Failed to load embed_tokens: {}", e))?;
 
-        let decoder = Session::builder()
+        let decoder = Self::create_session_builder()
             .and_then(|b| b.commit_from_file(model_dir.join("decoder_model_merged.onnx")))
             .map_err(|e| format!("Failed to load decoder: {}", e))?;
 
         let tokenizer = TokenizerWrapper::from_file(&model_dir.join("tokenizer.json"))?;
+
+        // 모델 입력/출력 정보 로깅 (디버깅용)
+        for input in vision_encoder.inputs() {
+            log::info!("Vision encoder input: name={}", input.name());
+        }
+        for output in vision_encoder.outputs() {
+            log::info!("Vision encoder output: name={}", output.name());
+        }
 
         log::info!("All ONNX sessions loaded successfully");
         Ok(Self {
@@ -84,14 +100,28 @@ impl SmolVlmEngine {
 
     /// 비전 인코더를 실행한다.
     fn encode_vision(&mut self, pv_shape: &[usize], pv_data: &[f32]) -> Result<Features, String> {
+        // pv_shape: [1, 3, H, W] → [1, 1, 3, H, W] (batch, num_images, channels, H, W)
+        let h = pv_shape[2];
+        let w = pv_shape[3];
+        let pv_shape_5d = vec![1, 1, 3, h, w];
         let input_value = ort::value::Value::from_array(
-            (pv_shape.to_vec(), pv_data.to_vec()),
+            (pv_shape_5d, pv_data.to_vec()),
         )
         .map_err(|e| format!("Vision input error: {}", e))?;
 
+        // pixel_attention_mask: [batch, num_images, H, W] = [1, 1, H, W]
+        let mask_data: Vec<i64> = vec![1i64; h * w];
+        let mask_value = ort::value::Value::from_array(
+            (vec![1, 1, h, w], mask_data),
+        )
+        .map_err(|e| format!("Vision mask input error: {}", e))?;
+
         let outputs = self
             .vision_encoder
-            .run(ort::inputs!["pixel_values" => input_value])
+            .run(ort::inputs![
+                "pixel_values" => input_value,
+                "pixel_attention_mask" => mask_value
+            ])
             .map_err(|e| format!("Vision encoder error: {}", e))?;
 
         let (shape, data) = outputs[0]

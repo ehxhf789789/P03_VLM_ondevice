@@ -28,6 +28,7 @@ pub fn run() {
             commands::download_model,
             commands::load_model,
             commands::analyze_image,
+            commands::read_image_preview,
             commands::get_history,
         ])
         .run(tauri::generate_context!())

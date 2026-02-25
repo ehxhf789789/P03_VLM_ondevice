@@ -1,8 +1,8 @@
 use image::DynamicImage;
 use ndarray::Array4;
 
-/// 이미지 크기 상수 (SmolVLM은 384x384 사용)
-pub const IMAGE_SIZE: u32 = 384;
+/// 이미지 크기 상수 (SmolVLM-256M은 512x512 사용)
+pub const IMAGE_SIZE: u32 = 512;
 
 /// SigLIP 정규화 파라미터
 const NORMALIZE_MEAN: f32 = 0.5;
