@@ -1,0 +1,252 @@
+[
+  {
+    "model": "HuggingFaceTB/SmolVLM-256M-Instruct",
+    "tests": [
+      {
+        "image": "clean_surface",
+        "prompt": "object_recognition",
+        "response": "A logo.",
+        "time_sec": 30.27
+      },
+      {
+        "image": "clean_surface",
+        "prompt": "damage_detection",
+        "response": "The image shows a close-up of a section of a building, specifically a part of a building known as a \"brickwork.\" The bricks are arranged in a pattern that appears to be a traditional or traditional style, possibly from a historical or cultural context. The bricks are arranged in a grid pattern, with each brick forming a distinct section.\n\nThe bricks are of different sizes and shapes, with some being larger and others smaller. The bricks are arranged in a way that suggests a traditional or traditional style, possibly indicating that the building is from a historical or cultural period.\n\nThe bricks are not uniformly aligned, with some sections being more spread out than others. This could indicate that the building was built in a different time period or that the bricks were intentionally arranged to create a specific aesthetic or functional design.\n\nThe bricks are not uniformly aligned, with some sections being more spread out than others. This could indicate that the building was built in a different time period or that the",
+        "time_sec": 39.12
+      },
+      {
+        "image": "clean_surface",
+        "prompt": "json_output",
+        "response": "{\n  \"object\": \"identified object name\",\n  \"condition\": \"new/good/fair/poor/damaged\",\n  \"damages\": [\n    {\n      \"type\": \"damage type\", \"severity\": \"minor/moderate/severe\", \"location\": \"where\"}\n  ]\n}",
+        "time_sec": 30.12
+      },
+      {
+        "image": "clean_surface",
+        "prompt": "location_description",
+        "response": "70.",
+        "time_sec": 28.56
+      },
+      {
+        "image": "scratched_surface",
+        "prompt": "object_recognition",
+        "response": "x",
+        "time_sec": 29.56
+      },
+      {
+        "image": "scratched_surface",
+        "prompt": "damage_detection",
+        "response": "Type of damage, severity (minor/moderate/severe), and location.",
+        "time_sec": 28.61
+      },
+      {
+        "image": "scratched_surface",
+        "prompt": "json_output",
+        "response": "{\n  \"object\": \"identified object name\",\n  \"condition\": \"new/good/fair/poor/damaged\",\n  \"damages\": [\n    {\n      \"type\": \"damage type\", \"severity\": \"minor/moderate/severe\", \"location\": \"where\"}\n  ]\n}",
+        "time_sec": 31.37
+      },
+      {
+        "image": "scratched_surface",
+        "prompt": "location_description",
+        "response": "100",
+        "time_sec": 31.35
+      },
+      {
+        "image": "rusted_surface",
+        "prompt": "object_recognition",
+        "response": "2",
+        "time_sec": 33.27
+      },
+      {
+        "image": "rusted_surface",
+        "prompt": "damage_detection",
+        "response": "Type of damage: Minor, severity: Moderate, location: Near the left corner.",
+        "time_sec": 31.24
+      },
+      {
+        "image": "rusted_surface",
+        "prompt": "json_output",
+        "response": "{\n  \"object\": \"identified object name\",\n  \"condition\": \"new/good/fair/poor/damaged\",\n  \"damages\": [\n    {\n      \"type\": \"damage type\", \"severity\": \"minor/moderate/severe\", \"location\": \"where\"}\n  ]\n}",
+        "time_sec": 32.62
+      },
+      {
+        "image": "rusted_surface",
+        "prompt": "location_description",
+        "response": "20%",
+        "time_sec": 29.48
+      },
+      {
+        "image": "dented_surface",
+        "prompt": "object_recognition",
+        "response": "Sphere.",
+        "time_sec": 28.88
+      },
+      {
+        "image": "dented_surface",
+        "prompt": "damage_detection",
+        "response": "Minor damage, severe.",
+        "time_sec": 29.69
+      },
+      {
+        "image": "dented_surface",
+        "prompt": "json_output",
+        "response": "{\n  \"object\": \"identified object name\",\n  \"condition\": \"new/good/fair/poor/damaged\",\n  \"damages\": [\n    {\n      \"type\": \"damage type\", \"severity\": \"minor/moderate/severe\", \"location\": \"where\"}\n  ]\n}",
+        "time_sec": 31.64
+      },
+      {
+        "image": "dented_surface",
+        "prompt": "location_description",
+        "response": "90.",
+        "time_sec": 30.5
+      },
+      {
+        "image": "complex_damage",
+        "prompt": "object_recognition",
+        "response": "\\mathbb{E}",
+        "time_sec": 30.14
+      },
+      {
+        "image": "complex_damage",
+        "prompt": "damage_detection",
+        "response": "Type of damage: Minor, severity: Minor, location: Location is not specified.",
+        "time_sec": 29.03
+      },
+      {
+        "image": "complex_damage",
+        "prompt": "json_output",
+        "response": "{\n  \"object\": \"identified object name\",\n  \"condition\": \"new/good/fair/poor/damaged\",\n  \"damages\": [\n    {\n      \"type\": \"damage type\", \"severity\": \"minor/moderate/severe\", \"location\": \"where\"}\n  ]\n}",
+        "time_sec": 30.7
+      },
+      {
+        "image": "complex_damage",
+        "prompt": "location_description",
+        "response": "30.",
+        "time_sec": 31.13
+      }
+    ]
+  },
+  {
+    "model": "HuggingFaceTB/SmolVLM-500M-Instruct",
+    "tests": [
+      {
+        "image": "clean_surface",
+        "prompt": "object_recognition",
+        "response": "None.",
+        "time_sec": 32.82
+      },
+      {
+        "image": "clean_surface",
+        "prompt": "damage_detection",
+        "response": "The image is a clean, well-lit photograph of a gray, off-white background. There are no objects, people, or text within the image. The background is uniform and lacks any discernible patterns or textures. The image is devoid of any signs of wear or damage, suggesting it is a pristine, high-quality photograph.\n\n**Description:**\n\n- **Background:** The background is a solid off-white color, which provides a neutral backdrop that does not distract from the main subject of the image.\n- **Color:** The color of the background is consistent and does not have any distinct hues or patterns.\n- **Shadows:** There are no visible shadows or highlights in the image, indicating that the light source is evenly distributed.\n- **Texture:** There are no visible textures or patterns on the background, which suggests that it is smooth and smooth.\n- **Lighting:** The lighting is even and diffused, with no harsh shadows or bright",
+        "time_sec": 38.43
+      },
+      {
+        "image": "clean_surface",
+        "prompt": "json_output",
+        "response": "{\n    \"object\": \"identified object name\",\n    \"condition\": \"new/good/fair/poor/damaged\",\n    \"damages\": [\n        {\n            \"type\": \"damage type\",\n            \"severity\": \"minor/moderate/severe\",\n            \"location\": \"where\"\n        }\n    ]\n}",
+        "time_sec": 36.96
+      },
+      {
+        "image": "clean_surface",
+        "prompt": "location_description",
+        "response": "Top-left: 0.0%\nTop-center: 0.0%\nTop-right: 0.0%\nCenter-left: 0.0%\nCenter: 0.0%\nCenter-right: 0.0%\nBottom-left: 0.0%\nBottom-center: 0.0%\nBottom-right: 0.0%",
+        "time_sec": 38.02
+      },
+      {
+        "image": "scratched_surface",
+        "prompt": "object_recognition",
+        "response": "Y.",
+        "time_sec": 34.42
+      },
+      {
+        "image": "scratched_surface",
+        "prompt": "damage_detection",
+        "response": "Y",
+        "time_sec": 34.31
+      },
+      {
+        "image": "scratched_surface",
+        "prompt": "json_output",
+        "response": "Y",
+        "time_sec": 34.83
+      },
+      {
+        "image": "scratched_surface",
+        "prompt": "location_description",
+        "response": "Top-left.",
+        "time_sec": 33.11
+      },
+      {
+        "image": "rusted_surface",
+        "prompt": "object_recognition",
+        "response": "2.",
+        "time_sec": 58.49
+      },
+      {
+        "image": "rusted_surface",
+        "prompt": "damage_detection",
+        "response": "No visible damage or defects.",
+        "time_sec": 64.63
+      },
+      {
+        "image": "rusted_surface",
+        "prompt": "json_output",
+        "response": "{\n    \"object\": \"identified object name\",\n    \"condition\": \"new/good/fair/poor/damaged\",\n    \"damages\": [\n        {\n            \"type\": \"damage type\",\n            \"severity\": \"minor/moderate/severe\",\n            \"location\": \"where\"\n        }\n    ]\n}",
+        "time_sec": 67.04
+      },
+      {
+        "image": "rusted_surface",
+        "prompt": "location_description",
+        "response": "Top-left: 0.0%\nTop-center: 0.0%\nTop-right: 0.0%\nCenter-left: 0.0%\nCenter: 0.0%\nCenter-right: 0.0%\nBottom-left: 0.0%\nBottom-center: 0.0%\nBottom-right: 0.0%",
+        "time_sec": 64.15
+      },
+      {
+        "image": "dented_surface",
+        "prompt": "object_recognition",
+        "response": "Circle.",
+        "time_sec": 33.22
+      },
+      {
+        "image": "dented_surface",
+        "prompt": "damage_detection",
+        "response": "No visible damage.",
+        "time_sec": 33.68
+      },
+      {
+        "image": "dented_surface",
+        "prompt": "json_output",
+        "response": "{\n    \"object\": \"identified object name\",\n    \"condition\": \"new/good/fair/poor/damaged\",\n    \"damages\": [\n        {\n            \"type\": \"damage type\",\n            \"severity\": \"minor/moderate/severe\",\n            \"location\": \"where\"\n        }\n    ]\n}",
+        "time_sec": 34.41
+      },
+      {
+        "image": "dented_surface",
+        "prompt": "location_description",
+        "response": "Top-left.",
+        "time_sec": 32.09
+      },
+      {
+        "image": "complex_damage",
+        "prompt": "object_recognition",
+        "response": "Rectangle.",
+        "time_sec": 32.8
+      },
+      {
+        "image": "complex_damage",
+        "prompt": "damage_detection",
+        "response": "No visible damage.",
+        "time_sec": 31.98
+      },
+      {
+        "image": "complex_damage",
+        "prompt": "json_output",
+        "response": "{\n    \"object\": \"identified object name\",\n    \"condition\": \"new/good/fair/poor/damaged\",\n    \"damages\": [\n        {\n            \"type\": \"damage type\",\n            \"severity\": \"minor/moderate/severe\",\n            \"location\": \"where\"\n        }\n    ]\n}",
+        "time_sec": 36.97
+      },
+      {
+        "image": "complex_damage",
+        "prompt": "location_description",
+        "response": "Top-left: 10%, Top-center: 50%, Top-right: 50%, Center-left: 50%, Center-center: 50%, Center-right: 50%, Bottom-left: 50%, Bottom-center: 50%, Bottom-right: 50%.",
+        "time_sec": 35.43
+      }
+    ]
+  }
+]

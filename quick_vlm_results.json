@@ -1,0 +1,69 @@
+{
+  "timestamp": "2026-02-26T15:17:32.683652",
+  "results": [
+    {
+      "model": "SmolVLM-256M",
+      "model_id": "HuggingFaceTB/SmolVLM-256M-Instruct",
+      "tests": [
+        {
+          "image": "synthetic_boots",
+          "response": "No",
+          "time": 51.36,
+          "success": true
+        },
+        {
+          "image": "synthetic_gloves",
+          "response": "No.",
+          "time": 42.31,
+          "success": true
+        }
+      ],
+      "scores": {
+        "object": 0,
+        "damage": 2
+      }
+    },
+    {
+      "model": "SmolVLM-500M",
+      "model_id": "HuggingFaceTB/SmolVLM-500M-Instruct",
+      "tests": [
+        {
+          "image": "synthetic_boots",
+          "response": "Hardhat/boots/gloves/hammer.",
+          "time": 37.86,
+          "success": true
+        },
+        {
+          "image": "synthetic_gloves",
+          "response": "Yes.",
+          "time": 37.43,
+          "success": true
+        }
+      ],
+      "scores": {
+        "object": 1,
+        "damage": 1
+      }
+    },
+    {
+      "model": "Florence-2-base",
+      "model_id": "microsoft/Florence-2-base",
+      "tests": [
+        {
+          "image": "synthetic_boots",
+          "error": "TokenizersBackend has no attribute additional_special_tokens",
+          "success": false
+        },
+        {
+          "image": "synthetic_gloves",
+          "error": "TokenizersBackend has no attribute additional_special_tokens",
+          "success": false
+        }
+      ],
+      "scores": {
+        "object": 0,
+        "damage": 0
+      }
+    }
+  ]
+}

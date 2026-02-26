@@ -1,0 +1,310 @@
+{
+  "timestamp": "2026-02-26T15:03:29.799729",
+  "device": "cpu",
+  "results": [
+    {
+      "model": "SmolVLM-256M",
+      "model_id": "HuggingFaceTB/SmolVLM-256M-Instruct",
+      "size_mb": 500,
+      "device": "cpu",
+      "tests": [
+        {
+          "image": "synthetic_boots",
+          "prompt": "object_recognition_en",
+          "response": "1.",
+          "time_sec": 5.33,
+          "success": true
+        },
+        {
+          "image": "synthetic_boots",
+          "prompt": "damage_detection_en",
+          "response": "No",
+          "time_sec": 5.37,
+          "success": true
+        },
+        {
+          "image": "synthetic_boots",
+          "prompt": "structured_json",
+          "response": "{\n    \"object\": [\n        {\n            \"name\": \"new|good|fair|poor|damaged|damage type|usable|damage severity|damage type|usable|damage severity|damage type|usable|damage severity|damage type|usable|damage severity|damage type|usable|damage severity|damage type|usable|damage severity|damage type|usable|damage severity|damage type|usable|damage severity|damage type|usable|damage severity|damage type|usable|damage severity|damage type|usable|damage severity|damage type|usable|damage severity|dama",
+          "time_sec": 12.73,
+          "success": true
+        },
+        {
+          "image": "synthetic_gloves",
+          "prompt": "object_recognition_en",
+          "response": "6",
+          "time_sec": 5.3,
+          "success": true
+        },
+        {
+          "image": "synthetic_gloves",
+          "prompt": "damage_detection_en",
+          "response": "1. Object type\n2. Damage presence (yes/no)\n3. Damage type (crack, scratch, discoloration, wear, rust, etc.)\n4. Damage location (top/center/bottom)\n5. Severity (minor/moderate/severe)\n6. Usability (usable/needs inspection/replace)",
+          "time_sec": 7.2,
+          "success": true
+        },
+        {
+          "image": "synthetic_gloves",
+          "prompt": "structured_json",
+          "response": "The image shows a blue object, which appears to be a hardhat or boots. The hardhat is rectangular in shape and has a blue color. The top of the hardhat is blue, and the bottom is blue. The top of the hardhat has a small, rounded notch at the top, which is likely a safety feature. The hardhat is placed against a plain gray background.",
+          "time_sec": 7.29,
+          "success": true
+        },
+        {
+          "image": "synthetic_hammer",
+          "prompt": "object_recognition_en",
+          "response": "T",
+          "time_sec": 5.24,
+          "success": true
+        },
+        {
+          "image": "synthetic_hammer",
+          "prompt": "damage_detection_en",
+          "response": "1. Damage presence (yes/no)\n5. Damage type (crack, scratch, discoloration, wear, rust, etc.)\n6. Damage location (top/center/bottom)\n7. Severity (minor/moderate/severe)\n8. Usability (usable/needs inspection/replace)",
+          "time_sec": 7.0,
+          "success": true
+        },
+        {
+          "image": "synthetic_hammer",
+          "prompt": "structured_json",
+          "response": "The image shows a single object labeled \"T\" on a white background. The object is a rectangular box with a blue border. The box is positioned such that its top and bottom edges are aligned horizontally, and its left and right edges are aligned vertically. The box is rectangular in shape and has a smooth surface.\n\nThe box is colored in a dark blue shade, which contrasts with the white background. The blue border of the box is slightly thicker on the left side and thinner on the right side. The box",
+          "time_sec": 10.88,
+          "success": true
+        },
+        {
+          "image": "synthetic_hammer_rusty",
+          "prompt": "object_recognition_en",
+          "response": "T.",
+          "time_sec": 5.35,
+          "success": true
+        },
+        {
+          "image": "synthetic_hammer_rusty",
+          "prompt": "damage_detection_en",
+          "response": "1. Damage presence (yes/no)",
+          "time_sec": 5.52,
+          "success": true
+        },
+        {
+          "image": "synthetic_hammer_rusty",
+          "prompt": "structured_json",
+          "response": "The image represents a table with two columns and three rows. The first column is labeled \"name\" and lists the names of the objects. The second column is labeled \"condition\" and lists the conditions under which the objects are affected. The third column is labeled \"usable\" and lists the objects that are usable.\n\nThe table is structured as follows:\n\n```\n| Name | Condition |usable |\n|------|-------|-------|\n| object 1 | new| good|\n| object 2 | good| fair|\n| object 3 | good| poor|\n```\n\nThe table is",
+          "time_sec": 12.89,
+          "success": true
+        },
+        {
+          "image": "synthetic_hardhat",
+          "prompt": "object_recognition_en",
+          "response": "- Blue",
+          "time_sec": 5.28,
+          "success": true
+        },
+        {
+          "image": "synthetic_hardhat",
+          "prompt": "damage_detection_en",
+          "response": "Yes",
+          "time_sec": 5.35,
+          "success": true
+        },
+        {
+          "image": "synthetic_hardhat",
+          "prompt": "structured_json",
+          "response": "{\n    \"object\": [\n        {\n            \"name\": \"new|good|fair|poor|damaged|new|good|fair|poor|damaged|new|good|fair|poor|damaged|new|good|fair|poor|damaged|new|good|fair|poor|damaged|new|good|fair|poor|damaged|new|good|fair|poor|damaged|new|good|fair|poor|damaged|new|good|fair|poor|damaged|new|good|fair|poor|damaged|new|good|fair|poor|damaged|new|good|fair|poor|damaged|new|good|fair|poor|damaged|new|good|fair|poor|damaged|new|good|fair|poor|damaged|new|good|fair|poor|damaged|new|good|fair|poor|",
+          "time_sec": 13.12,
+          "success": true
+        },
+        {
+          "image": "synthetic_hardhat_cracked",
+          "prompt": "object_recognition_en",
+          "response": "- blue",
+          "time_sec": 5.3,
+          "success": true
+        },
+        {
+          "image": "synthetic_hardhat_cracked",
+          "prompt": "damage_detection_en",
+          "response": "Answer: No",
+          "time_sec": 5.29,
+          "success": true
+        },
+        {
+          "image": "synthetic_hardhat_cracked",
+          "prompt": "structured_json",
+          "response": "{\n    \"object\": [\n        {\n            \"name\": \"new|good|fair|poor|damaged\"\n        },\n        {\n            \"name\": \"new|good|fair|poor|damaged\"\n        }\n    ],\n    \"condition\": [\n        \"new|good|fair|poor|damaged\"\n    ]\n}",
+          "time_sec": 7.18,
+          "success": true
+        }
+      ],
+      "summary": {
+        "load_time_sec": 6.58,
+        "total_tests": 18,
+        "successful_tests": 18,
+        "success_rate": 100.0,
+        "avg_time_sec": 7.31,
+        "total_time_sec": 131.62
+      },
+      "scores": {
+        "object_recognition": 0,
+        "damage_detection": 3,
+        "json_output": 1
+      }
+    },
+    {
+      "model": "SmolVLM-500M",
+      "model_id": "HuggingFaceTB/SmolVLM-500M-Instruct",
+      "size_mb": 800,
+      "device": "cpu",
+      "tests": [
+        {
+          "image": "synthetic_boots",
+          "prompt": "object_recognition_en",
+          "response": "Hardhat.",
+          "time_sec": 6.12,
+          "success": true
+        },
+        {
+          "image": "synthetic_boots",
+          "prompt": "damage_detection_en",
+          "response": "1. Object type is a metal.\n2. Damage presence is yes.\n3. Damage type is a crack.\n4. Damage location is top.\n5. Severity is moderate.\n6. Usability is not usable.",
+          "time_sec": 8.06,
+          "success": true
+        },
+        {
+          "image": "synthetic_boots",
+          "prompt": "structured_json",
+          "response": "{\n    \"object\": {\n        \"name\": \"object name\",\n        \"type\": \"hardhat|boots|gloves|tool\",\n        \"color\": \"color\"\n    },\n    \"condition\": {\n        \"overall\": \"new|good|fair|poor|damaged\",\n        \"usable\": true\n    },\n    \"damages\": [\n        {\n            \"type\": \"damage type\",\n            \"location\": \"where\",\n            \"severity\": \"minor\"\n        }\n    ]\n}",
+          "time_sec": 10.55,
+          "success": true
+        },
+        {
+          "image": "synthetic_gloves",
+          "prompt": "object_recognition_en",
+          "response": "Hardhat.",
+          "time_sec": 5.97,
+          "success": true
+        },
+        {
+          "image": "synthetic_gloves",
+          "prompt": "damage_detection_en",
+          "response": "1. Construction equipment\n2. No damage present\n2. Moderate damage present\n2. Top of the object\n3. No damage present\n3. No damage present\n3. No damage present",
+          "time_sec": 7.7,
+          "success": true
+        },
+        {
+          "image": "synthetic_gloves",
+          "prompt": "structured_json",
+          "response": "{\n    \"object\": {\n        \"name\": \"object name\",\n        \"type\": \"hardhat|boots|gloves|tool\",\n        \"color\": \"color\"\n    },\n    \"condition\": {\n        \"overall\": \"new|good|fair|poor|damaged\",\n        \"usable\": true\n    },\n    \"damages\": [\n        {\n            \"type\": \"damage type\",\n            \"location\": \"where\",\n            \"severity\": \"minor\"\n        },\n        {\n            \"type\": \"damage type\",\n            \"location\": \"where\",\n            \"severity\": \"moderate\"\n        },\n        {\n    ",
+          "time_sec": 13.02,
+          "success": true
+        },
+        {
+          "image": "synthetic_hammer",
+          "prompt": "object_recognition_en",
+          "response": "Tool.",
+          "time_sec": 6.0,
+          "success": true
+        },
+        {
+          "image": "synthetic_hammer",
+          "prompt": "damage_detection_en",
+          "response": "1. Object type - Equipment\n2. Damage presence - No\n2. Damage type - No\n2. Damage location - Top\n6. Usability - No\n7. Sevareity - Moderate\n7. Usability - No",
+          "time_sec": 8.27,
+          "success": true
+        },
+        {
+          "image": "synthetic_hammer",
+          "prompt": "structured_json",
+          "response": "{\n    \"object\": {\n        \"name\": \"object name\",\n        \"type\": \"hardhat|boots|gloves|tool\",\n        \"color\": \"color\"\n    },\n    \"condition\": {\n        \"overall\": \"new|good|fair|poor|damaged\",\n        \"usable\": true\n    },\n    \"damages\": [\n        {\n            \"type\": \"damage type\",\n            \"location\": \"where\",\n            \"severity\": \"minor\"\n        }\n    ]\n}",
+          "time_sec": 10.57,
+          "success": true
+        },
+        {
+          "image": "synthetic_hammer_rusty",
+          "prompt": "object_recognition_en",
+          "response": "Tool.",
+          "time_sec": 6.03,
+          "success": true
+        },
+        {
+          "image": "synthetic_hammer_rusty",
+          "prompt": "damage_detection_en",
+          "response": "1. Object type - Construction equipment\n2. Damage presence - No damage present\n2. Damage type - No damage present\n2. Damage location - No damage present\n2. Severity - Minor\n2. Usability - No damage present",
+          "time_sec": 8.08,
+          "success": true
+        },
+        {
+          "image": "synthetic_hammer_rusty",
+          "prompt": "structured_json",
+          "response": "{\n    \"object\": {\n        \"name\": \"object name\",\n        \"type\": \"hardhat|boots|gloves|tool\",\n        \"color\": \"color\"\n    },\n    \"condition\": {\n        \"overall\": \"new|good|fair|poor|damaged\",\n        \"usable\": true\n    },\n    \"damages\": [\n        {\n            \"type\": \"damage type\",\n            \"location\": \"where\",\n            \"severity\": \"minor\"\n        }\n    ]\n}",
+          "time_sec": 10.49,
+          "success": true
+        },
+        {
+          "image": "synthetic_hardhat",
+          "prompt": "object_recognition_en",
+          "response": "Circle.",
+          "time_sec": 5.94,
+          "success": true
+        },
+        {
+          "image": "synthetic_hardhat",
+          "prompt": "damage_detection_en",
+          "response": "1. Object type is a circle.\n2. No damage present.\n3. No crack, scratch, discoloration, wear, or rust.\n4. No damage location.\n5. Severity is minor.\n6. Usability is not applicable.",
+          "time_sec": 8.25,
+          "success": true
+        },
+        {
+          "image": "synthetic_hardhat",
+          "prompt": "structured_json",
+          "response": "{\n    \"object\": {\n        \"name\": \"object name\",\n        \"type\": \"hardhat|boots|gloves|tool\",\n        \"color\": \"color\"\n    },\n    \"condition\": {\n        \"overall\": \"new|good|fair|poor|damaged\",\n        \"usable\": true\n    },\n    \"damages\": [\n        {\n            \"type\": \"damage type\",\n            \"location\": \"where\",\n            \"severity\": \"minor\"\n        }\n    ]\n}",
+          "time_sec": 10.41,
+          "success": true
+        },
+        {
+          "image": "synthetic_hardhat_cracked",
+          "prompt": "object_recognition_en",
+          "response": "Circle.",
+          "time_sec": 5.9,
+          "success": true
+        },
+        {
+          "image": "synthetic_hardhat_cracked",
+          "prompt": "damage_detection_en",
+          "response": "1. Object type is a circle.\n2. No damage present.\n3. No crack, scratch, discoloration, wear, or rust.\n4. Minor damage.\n5. No severe damage.\n6. Usability: usable.",
+          "time_sec": 8.14,
+          "success": true
+        },
+        {
+          "image": "synthetic_hardhat_cracked",
+          "prompt": "structured_json",
+          "response": "{\n    \"object\": {\n        \"name\": \"object name\",\n        \"type\": \"hardhat|boots|gloves|tool\",\n        \"color\": \"color\"\n    },\n    \"condition\": {\n        \"overall\": \"new|good|fair|poor|damaged\",\n        \"usable\": true\n    },\n    \"damages\": [\n        {\n            \"type\": \"damage type\",\n            \"location\": \"where\",\n            \"severity\": \"minor\"\n        }\n    ]\n}",
+          "time_sec": 10.44,
+          "success": true
+        }
+      ],
+      "summary": {
+        "load_time_sec": 5.8,
+        "total_tests": 18,
+        "successful_tests": 18,
+        "success_rate": 100.0,
+        "avg_time_sec": 8.33,
+        "total_time_sec": 149.95
+      },
+      "scores": {
+        "object_recognition": 4,
+        "damage_detection": 6,
+        "json_output": 6
+      }
+    },
+    {
+      "model": "Moondream2",
+      "model_id": "vikhyatk/moondream2",
+      "size_mb": 2000,
+      "device": "cpu",
+      "tests": [],
+      "summary": {},
+      "scores": {},
+      "error": "'HfMoondream' object has no attribute 'all_tied_weights_keys'"
+    }
+  ]
+}

@@ -1,0 +1,143 @@
+{
+  "timestamp": "2026-02-26T15:49:06.673178",
+  "benchmark_type": "comprehensive_real_images",
+  "image_source": "real_images/ folder (Unsplash, Pexels)",
+  "results": [
+    {
+      "model": "SmolVLM-256M",
+      "model_id": "HuggingFaceTB/SmolVLM-256M-Instruct",
+      "model_type": "smolvlm",
+      "tests": [
+        {
+          "image": "hardhat_yellow",
+          "description": "Construction workers with yellow hardhats",
+          "response": "Yes, the condition of the objects is good/fair/poor. The condition is described as \"good/fair/poor.\" The damage detected is \"any observations.\"",
+          "scores": {
+            "object_recognition": 0,
+            "condition_assessment": 3,
+            "json_format": 0,
+            "detail_level": 0
+          },
+          "time_sec": 28.75
+        },
+        {
+          "image": "hardhat_single",
+          "description": "Single worker at construction site",
+          "response": "1. What condition is the condition of the objects?\n\nOutput: \"good/fair/poor\".",
+          "scores": {
+            "object_recognition": 0,
+            "condition_assessment": 3,
+            "json_format": 0,
+            "detail_level": 0
+          },
+          "time_sec": 29.28
+        },
+        {
+          "image": "hammer",
+          "description": "Claw hammer on wooden surface",
+          "response": "1. What objects are visible in the image?\n\nA. Hardhat, Safety Vest, Boots, Gloves, Hammer\n2. What condition is the hardhat in?\n3. What condition is the hammer in?\n4. What damage is visible on the hammer?\n5. Describe the location and type of the hammer.\n\nOutput:\n{\n    \"objects\": [\n        {\n            \"name\": \"hardhat\",\n            \"condition\": \"good/fair/poor\"\n        },\n        {\n            \"name\": \"safety vest\",\n            \"condition\": \"worn/damaged\"\n        },\n        {\n            \"name\": \"boots\",\n            \"condition\": \"damaged\"\n        },\n        {\n            \"name\": \"gloves\",\n            \"condition\": \"damaged\"\n        }\n    ],\n    \"damage_detected\": {\n        \"condition\": \"damage detected\"\n    },\n    \"damage_details\": {\n        \"description\": \"description if any\"\n    }\n}",
+          "scores": {
+            "object_recognition": 5,
+            "condition_assessment": 3,
+            "json_format": 3,
+            "detail_level": 2
+          },
+          "time_sec": 32.43
+        },
+        {
+          "image": "wrench",
+          "description": "Wrench/spanner set",
+          "response": "1. Any visible damage or wear? Describe location and type if present.\n\nOutput: Yes, any visible damage or wear? Describe location and type if present.",
+          "scores": {
+            "object_recognition": 0,
+            "condition_assessment": 0,
+            "json_format": 0,
+            "detail_level": 0
+          },
+          "time_sec": 30.08
+        }
+      ],
+      "total_scores": {
+        "object_recognition": 5,
+        "condition_assessment": 9,
+        "json_format": 3,
+        "detail_level": 2
+      },
+      "avg_scores": {
+        "object_recognition": 1.25,
+        "condition_assessment": 2.25,
+        "json_format": 0.75,
+        "detail_level": 0.5
+      },
+      "avg_total": 4.75
+    },
+    {
+      "model": "SmolVLM-500M",
+      "model_id": "HuggingFaceTB/SmolVLM-500M-Instruct",
+      "model_type": "smolvlm",
+      "tests": [
+        {
+          "image": "hardhat_yellow",
+          "description": "Construction workers with yellow hardhats",
+          "response": "{\n    \"objects\": [\n        {\n            \"name\": \"hardhat\",\n            \"condition\": \"new\",\n            \"notes\": \"new\"\n        },\n        {\n            \"name\": \"safety vest\",\n            \"condition\": \"new\",\n            \"notes\": \"new\"\n        },\n        {\n            \"name\": \"boots\",\n            \"condition\": \"new\",\n            \"notes\": \"new\"\n        },\n        {\n            \"name\": \"gloves\",\n            \"condition\": \"new\",\n            \"notes\": \"new\"\n        },\n        {\n            \"name\": \"hammer\",\n            \"condition\": \"new\",\n            \"notes\": \"new\"\n        },\n        {\n            \"name\": \"wrench\",\n            \"condition\": \"new\",\n            \"notes\": \"new\"\n        },\n        {\n            \"name\": \"tools\",\n            \"condition\": \"new\",\n            \"notes\": \"new\"\n        },\n        {\n            \"name\": \"stools\",\n            \"condition\": \"new\",\n            \"notes\": \"new\"\n        },\n        {\n            \"name\": \"wooden sticks\",\n            \"condition\": \"new\",\n            \"notes\": \"new\"\n        }\n    ],\n    \"overall_condition\": \"good/fair/poor\",\n    \"damage_detected\": true,\n    \"damage_details\": [\n        {\n            \"name\": \"wooden sticks\",\n            \"condition\": \"new\",\n            \"notes\": \"new\"\n        },\n        {\n            \"name\": \"wooden sticks\",\n            \"condition\": \"new\",\n            \"notes\": \"new\"\n        }\n    ]\n}",
+          "scores": {
+            "object_recognition": 5,
+            "condition_assessment": 3,
+            "json_format": 3,
+            "detail_level": 2
+          },
+          "time_sec": 43.03
+        },
+        {
+          "image": "hardhat_single",
+          "description": "Single worker at construction site",
+          "response": "{\n    \"objects\": [\n        {\n            \"name\": \"hardhat\",\n            \"condition\": \"new\",\n            \"notes\": \"any observations\"\n        },\n        {\n            \"name\": \"safety vest\",\n            \"condition\": \"new\",\n            \"notes\": \"any observations\"\n        },\n        {\n            \"name\": \"boots\",\n            \"condition\": \"new\",\n            \"notes\": \"any observations\"\n        },\n        {\n            \"name\": \"gloves\",\n            \"condition\": \"new\",\n            \"notes\": \"any observations\"\n        },\n        {\n            \"name\": \"wrench\",\n            \"condition\": \"new\",\n            \"notes\": \"any observations\"\n        },\n        {\n            \"name\": \"hammer\",\n            \"condition\": \"new\",\n            \"notes\": \"any observations\"\n        }\n    ],\n    \"overall_condition\": \"good/fair/poor\",\n    \"damage_detected\": true,\n    \"damage_details\": [\n        {\n            \"name\": \"new/new/new\"\n        },\n        {\n            \"name\": \"new/new/new\"\n        }\n    ]\n}",
+          "scores": {
+            "object_recognition": 5,
+            "condition_assessment": 3,
+            "json_format": 3,
+            "detail_level": 2
+          },
+          "time_sec": 38.05
+        },
+        {
+          "image": "hammer",
+          "description": "Claw hammer on wooden surface",
+          "response": "{\n    \"objects\": [\n        {\n            \"name\": \"hardhat\",\n            \"condition\": \"new\",\n            \"notes\": \"any observations\"\n        },\n        {\n            \"name\": \"safety vest\",\n            \"condition\": \"used\",\n            \"notes\": \"any observations\"\n        },\n        {\n            \"name\": \"boots\",\n            \"condition\": \"worn\",\n            \"notes\": \"any observations\"\n        },\n        {\n            \"name\": \"wrench\",\n            \"condition\": \"worn\",\n            \"notes\": \"any observations\"\n        },\n        {\n            \"name\": \"hammer\",\n            \"condition\": \"worn\",\n            \"notes\": \"any observations\"\n        }\n    ]\n}",
+          "scores": {
+            "object_recognition": 5,
+            "condition_assessment": 3,
+            "json_format": 3,
+            "detail_level": 2
+          },
+          "time_sec": 35.46
+        },
+        {
+          "image": "wrench",
+          "description": "Wrench/spanner set",
+          "response": "{\n    \"objects\": [\n        {\n            \"name\": \"wrench\",\n            \"condition\": \"new\",\n            \"notes\": \"any observations\"\n        },\n        {\n            \"name\": \"wrench\",\n            \"condition\": \"new\",\n            \"notes\": \"any observations\"\n        },\n        {\n            \"name\": \"wrench\",\n            \"condition\": \"new\",\n            \"notes\": \"any observations\"\n        },\n        {\n            \"name\": \"wrench\",\n            \"condition\": \"new\",\n            \"notes\": \"any observations\"\n        },\n        {\n            \"name\": \"wrench\",\n            \"condition\": \"new\",\n            \"notes\": \"any observations\"\n        },\n        {\n            \"name\": \"wrench\",\n            \"condition\": \"new\",\n            \"notes\": \"any observations\"\n        },\n        {\n            \"name\": \"wrench\",\n            \"condition\": \"new\",\n            \"notes\": \"any observations\"\n        },\n        {\n            \"name\": \"wrench\",\n            \"condition\": \"new\",\n            \"notes\": \"any observations\"\n        },\n        {\n            \"name\": \"wrench\",\n            \"condition\": \"new\",\n            \"notes\": \"any observations\"\n        },\n        {\n            \"name\": \"wrench\",\n            \"condition\": \"new\",\n            \"notes\": \"any observations\"\n        },\n        {\n            \"name\": \"wrench\",\n            \"condition\": \"new\",\n            \"notes\": \"any observations\"\n        },\n        {\n            \"name\": \"wrench\",\n            \"condition\": \"new\",\n            \"notes\": \"any observations\"\n        },\n        {\n            \"name\": \"wrench\",\n            \"condition\": \"new\",\n            \"notes\": \"any observations\"\n        },\n        {\n            \"name\": \"wrench\",\n            \"condition\": \"new\",\n            \"notes\": \"any observations\"\n        },\n        {\n            \"name\": \"wrench\",\n            \"condition\": \"new",
+          "scores": {
+            "object_recognition": 2,
+            "condition_assessment": 2,
+            "json_format": 1,
+            "detail_level": 2
+          },
+          "time_sec": 45.96
+        }
+      ],
+      "total_scores": {
+        "object_recognition": 17,
+        "condition_assessment": 11,
+        "json_format": 10,
+        "detail_level": 8
+      },
+      "avg_scores": {
+        "object_recognition": 4.25,
+        "condition_assessment": 2.75,
+        "json_format": 2.5,
+        "detail_level": 2.0
+      },
+      "avg_total": 11.5
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "model": "Qwen2-VL-2B",
+  "timestamp": "2026-02-26T16:01:14.839123",
+  "tests": [
+    {
+      "image": "gloves_work.jpg",
+      "error": "argument of type 'NoneType' is not iterable",
+      "success": false
+    },
+    {
+      "image": "hammer.jpg",
+      "error": "argument of type 'NoneType' is not iterable",
+      "success": false
+    },
+    {
+      "image": "hardhat_damaged.jpg",
+      "error": "argument of type 'NoneType' is not iterable",
+      "success": false
+    }
+  ]
+}

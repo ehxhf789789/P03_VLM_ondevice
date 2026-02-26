@@ -1,0 +1,213 @@
+{
+  "timestamp": "2026-02-26T15:17:01.608701",
+  "results": [
+    {
+      "model": "SmolVLM-256M",
+      "model_id": "HuggingFaceTB/SmolVLM-256M-Instruct",
+      "size": "256M",
+      "type": "smolvlm",
+      "tests": [
+        {
+          "image": "synthetic_boots",
+          "response": "{\n    \"name\": \"hardhat\",\n    \"color\": \"brown\",\n    \"damage\": \"yes/no\",\n    \"damage_details\": {\n        \"type\": \"damage\",\n        \"location\": \"hardhat\",\n        \"severity\": \"damage\"\n    }\n}",
+          "time_sec": 15.67,
+          "success": true
+        },
+        {
+          "image": "synthetic_gloves",
+          "response": "{\n    \"name\": \"hardhat\",\n    \"color\": \"blue\",\n    \"damage\": \"hard\",\n    \"damage_details\": {\n        \"type\": \"damage\",\n        \"location\": \"hard\",\n        \"severity\": \"damage\"\n    }\n}",
+          "time_sec": 12.01,
+          "success": true
+        },
+        {
+          "image": "synthetic_hammer",
+          "response": "{\n    \"object\": \"name\",\n    \"color\": \"color\",\n    \"damaged\": true/false,\n    \"damage_details\": {\n        \"type\": \"damage_details.type\",\n        \"location\": \"damage_details.location\",\n        \"severity\": \"damage_details.severity\"\n    }\n}",
+          "time_sec": 12.24,
+          "success": true
+        },
+        {
+          "image": "synthetic_hammer_rusty",
+          "response": "{\n    \"object\": \"name\",\n    \"color\": \"blue\",\n    \"damaged\": true,\n    \"damage_details\": {\n        \"type\": \"hardhat\",\n        \"location\": \"near construction site\",\n        \"severity\": \"damaged\"\n    }\n}",
+          "time_sec": 12.26,
+          "success": true
+        },
+        {
+          "image": "synthetic_hardhat",
+          "response": "{\n    \"object\": \"name\",\n    \"color\": \"blue\",\n    \"damaged\": true,\n    \"damage_details\": {\n        \"type\": \"damage\",\n        \"location\": \"damage\",\n        \"severity\": \"damage\"\n    }\n}",
+          "time_sec": 11.94,
+          "success": true
+        },
+        {
+          "image": "synthetic_hardhat_cracked",
+          "response": "The hardhat shown in the image is a standard safety helmet used for protection against head injuries.",
+          "time_sec": 11.06,
+          "success": true
+        }
+      ],
+      "summary": {
+        "total": 6,
+        "successful": 6,
+        "avg_time": 12.53,
+        "total_time": 75.17
+      },
+      "scores": {
+        "object": 4,
+        "damage": 5,
+        "json": 4
+      }
+    },
+    {
+      "model": "SmolVLM-500M",
+      "model_id": "HuggingFaceTB/SmolVLM-500M-Instruct",
+      "size": "500M",
+      "type": "smolvlm",
+      "tests": [
+        {
+          "image": "synthetic_boots",
+          "response": "{\n    \"object\": \"name\",\n    \"color\": \"color\",\n    \"damaged\": true,\n    \"damage_details\": {\n        \"type\": \"tool\",\n        \"location\": \"hand\",\n        \"severity\": \"fractured\"\n    }\n}",
+          "time_sec": 13.74,
+          "success": true
+        },
+        {
+          "image": "synthetic_gloves",
+          "response": "{\n    \"object\": \"hardhat\",\n    \"color\": \"blue\",\n    \"damaged\": true,\n    \"damage_details\": {\n        \"type\": \"tool\",\n        \"location\": \"head\",\n        \"severity\": \"injury\"\n    }\n}",
+          "time_sec": 13.93,
+          "success": true
+        },
+        {
+          "image": "synthetic_hammer",
+          "response": "{\n    \"object\": \"hardhat, safety boots, gloves, hammer, wrench, etc.\",\n    \"color\": \"blue\",\n    \"damaged\": true,\n    \"damage_details\": {\n        \"type\": \"hardhat\",\n        \"location\": \"hardhat\",\n        \"severity\": \"no damage\"\n    }\n}",
+          "time_sec": 14.49,
+          "success": true
+        },
+        {
+          "image": "synthetic_hammer_rusty",
+          "response": "{\n    \"object\": \"hardhat, safety boots, gloves, hammer, wrench, etc.\",\n    \"color\": \"blue\",\n    \"damaged\": true,\n    \"damage_details\": {\n        \"type\": \"hardhat\",\n        \"location\": \"head\",\n        \"severity\": \"injured\"\n    }\n}",
+          "time_sec": 29.74,
+          "success": true
+        },
+        {
+          "image": "synthetic_hardhat",
+          "response": "{\n    \"object\": \"safety equipment\",\n    \"color\": \"blue\",\n    \"damaged\": true,\n    \"damage_details\": {\n        \"type\": \"hardhat\",\n        \"location\": \"head\",\n        \"severity\": \"injury\"\n    }\n}",
+          "time_sec": 21.78,
+          "success": true
+        },
+        {
+          "image": "synthetic_hardhat_cracked",
+          "response": "{\n    \"object\": \"safety equipment\",\n    \"color\": \"blue\",\n    \"damaged\": true,\n    \"damage_details\": {\n        \"type\": \"hardhat\",\n        \"location\": \"safety boots\",\n        \"severity\": \"no damage\"\n    }\n}",
+          "time_sec": 30.41,
+          "success": true
+        }
+      ],
+      "summary": {
+        "total": 6,
+        "successful": 6,
+        "avg_time": 20.68,
+        "total_time": 124.09
+      },
+      "scores": {
+        "object": 6,
+        "damage": 6,
+        "json": 6
+      }
+    },
+    {
+      "model": "Florence-2-base",
+      "model_id": "microsoft/Florence-2-base",
+      "size": "0.2B",
+      "type": "florence",
+      "tests": [
+        {
+          "image": "synthetic_boots",
+          "error": "TokenizersBackend has no attribute additional_special_tokens",
+          "success": false
+        },
+        {
+          "image": "synthetic_gloves",
+          "error": "TokenizersBackend has no attribute additional_special_tokens",
+          "success": false
+        },
+        {
+          "image": "synthetic_hammer",
+          "error": "TokenizersBackend has no attribute additional_special_tokens",
+          "success": false
+        },
+        {
+          "image": "synthetic_hammer_rusty",
+          "error": "TokenizersBackend has no attribute additional_special_tokens",
+          "success": false
+        },
+        {
+          "image": "synthetic_hardhat",
+          "error": "TokenizersBackend has no attribute additional_special_tokens",
+          "success": false
+        },
+        {
+          "image": "synthetic_hardhat_cracked",
+          "error": "TokenizersBackend has no attribute additional_special_tokens",
+          "success": false
+        }
+      ],
+      "summary": {
+        "total": 6,
+        "successful": 0,
+        "avg_time": 0,
+        "total_time": 0
+      },
+      "scores": {
+        "object": 0,
+        "damage": 0,
+        "json": 0
+      }
+    },
+    {
+      "model": "Florence-2-large",
+      "model_id": "microsoft/Florence-2-large",
+      "size": "0.7B",
+      "type": "florence",
+      "tests": [
+        {
+          "image": "synthetic_boots",
+          "error": "TokenizersBackend has no attribute additional_special_tokens",
+          "success": false
+        },
+        {
+          "image": "synthetic_gloves",
+          "error": "TokenizersBackend has no attribute additional_special_tokens",
+          "success": false
+        },
+        {
+          "image": "synthetic_hammer",
+          "error": "TokenizersBackend has no attribute additional_special_tokens",
+          "success": false
+        },
+        {
+          "image": "synthetic_hammer_rusty",
+          "error": "TokenizersBackend has no attribute additional_special_tokens",
+          "success": false
+        },
+        {
+          "image": "synthetic_hardhat",
+          "error": "TokenizersBackend has no attribute additional_special_tokens",
+          "success": false
+        },
+        {
+          "image": "synthetic_hardhat_cracked",
+          "error": "TokenizersBackend has no attribute additional_special_tokens",
+          "success": false
+        }
+      ],
+      "summary": {
+        "total": 6,
+        "successful": 0,
+        "avg_time": 0,
+        "total_time": 0
+      },
+      "scores": {
+        "object": 0,
+        "damage": 0,
+        "json": 0
+      }
+    }
+  ]
+}

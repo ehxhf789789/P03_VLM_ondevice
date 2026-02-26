@@ -1,0 +1,163 @@
+{
+  "timestamp": "2026-02-26T15:36:31.564346",
+  "image_source": "real_images (Unsplash, Pexels)",
+  "num_images": 5,
+  "results": [
+    {
+      "model": "SmolVLM-256M",
+      "model_id": "HuggingFaceTB/SmolVLM-256M-Instruct",
+      "tests": [
+        {
+          "image": "construction_site_hardhats",
+          "description": "건설현장 작업자들 - 안전모 착용",
+          "response": "1. The condition of the equipment is described as \"new\" or \"used.\"\n2. The condition of the equipment is described as \"wear and tear.\"\n3. The condition of the equipment is described as \"damage.\"\n4. The condition of the equipment is described as \"none.\"\n\nThe construction site appears to be undergoing construction work, as evidenced by the presence of various tools and equipment, such as a hammer, wrench, and blue cable. The condition of the equipment is described as \"new\" or \"used,\" and the condition of the equipment is described as \"wear and tear.\" The condition of the equipment is described as \"damage,\" and the condition of the equipment is described as \"none.\"",
+          "scores": {
+            "object_recognition": 4,
+            "condition_assessment": 2,
+            "json_format": 0,
+            "detail_level": 2
+          },
+          "time_sec": 35.42
+        },
+        {
+          "image": "construction_workers",
+          "description": "건설현장 안전모 착용 작업자",
+          "response": "1. The yellow construction worker on the right is wearing a yellow hard hat and a blue safety vest.\n2. The yellow hard hat has a white brim and a white face.\n3. The yellow hard hat has a white brim and a white face.\n4. The yellow hard hat has a yellow face and a white brim.\n5. The yellow hard hat has a yellow face and a white brim.\n6. The yellow hard hat has a yellow face and a white brim.\n7. The yellow hard hat has a yellow face and a white brim.\n8. The yellow hard hat has a yellow face and a white brim.\n9. The yellow hard hat has a yellow face and a white brim.\n10. The yellow hard hat has a yellow face and a white brim.\n11. The yellow hard hat has a yellow face and a white brim.\n12. The yellow hard hat has a yellow face and a white brim.\n13. The yellow hard hat has a yellow face and a white brim.\n14. The yellow hard hat has a yellow face and a white brim.\n15. The yellow hard hat has a yellow face and a white brim.\n16. The yellow hard hat has a yellow face and a white brim.\n17. The yellow hard hat has a yellow face and a white brim.\n18. The yellow hard hat has a yellow face and a",
+          "scores": {
+            "object_recognition": 4,
+            "condition_assessment": 0,
+            "json_format": 0,
+            "detail_level": 2
+          },
+          "time_sec": 35.14
+        },
+        {
+          "image": "hammer_claw",
+          "description": "클로 해머 (장도리)",
+          "response": "1. The hammer is the only item present in the image.\n2. The hammer is new and has no visible damage.\n3. The hammer is on a wooden surface.",
+          "scores": {
+            "object_recognition": 1,
+            "condition_assessment": 1,
+            "json_format": 0,
+            "detail_level": 1
+          },
+          "time_sec": 29.01
+        },
+        {
+          "image": "wrench_set",
+          "description": "렌치/스패너 세트",
+          "response": "1. The items listed in the image are a variety of tools and equipment.\n2. The tools and equipment are arranged on a blue wall.\n3. The wall is covered in tools and equipment, including a hammer, wrench, and wrench holder.\n4. The hammer is positioned in the center of the wall, and the wrench is positioned to the left of the hammer.\n5. The wrench holder is positioned to the right of the hammer, and it holds a wrench.\n6. The tools and equipment are arranged in a way that suggests they are being used or displayed for a specific purpose.\n7. The condition of the tools and equipment is described as \"new\" or \"used.\"\n8. The condition of the tools and equipment is described as \"worn\" or \"damaged.\"\n9. The hammer is described as \"new\" or \"used.\"\n10. The wrench is described as \"wrench holder\" or \"wrench.\"\n11. The hammer is described as \"hardhat\" or \"safety vest.\"\n12. The wrench is described as \"used\" or \"old.\"\n13. The hammer is described as \"old\" or \"new.\"\n14. The wrench is described as \"wrench holder\" or \"wrench.\"\n15. The hammer is described as \"hardhat\" or \"safety vest.\"\n16. The wrench is described as \"old\"",
+          "scores": {
+            "object_recognition": 5,
+            "condition_assessment": 3,
+            "json_format": 0,
+            "detail_level": 2
+          },
+          "time_sec": 35.89
+        },
+        {
+          "image": "worker_with_gloves",
+          "description": "작업장갑 착용 작업자",
+          "response": "1. Any visible damage or wear? Describe the condition of the equipment.\n\nOutput: No, there is no visible damage or wear.",
+          "scores": {
+            "object_recognition": 0,
+            "condition_assessment": 0,
+            "json_format": 0,
+            "detail_level": 1
+          },
+          "time_sec": 29.73
+        }
+      ],
+      "total_scores": {
+        "object_recognition": 14,
+        "condition_assessment": 6,
+        "json_format": 0,
+        "detail_level": 8
+      },
+      "avg_scores": {
+        "object_recognition": 2.8,
+        "condition_assessment": 1.2,
+        "json_format": 0.0,
+        "detail_level": 1.6
+      }
+    },
+    {
+      "model": "SmolVLM-500M",
+      "model_id": "HuggingFaceTB/SmolVLM-500M-Instruct",
+      "tests": [
+        {
+          "image": "construction_site_hardhats",
+          "description": "건설현장 작업자들 - 안전모 착용",
+          "response": "Condition: new.",
+          "scores": {
+            "object_recognition": 0,
+            "condition_assessment": 1,
+            "json_format": 0,
+            "detail_level": 0
+          },
+          "time_sec": 32.3
+        },
+        {
+          "image": "construction_workers",
+          "description": "건설현장 안전모 착용 작업자",
+          "response": "The condition of the equipment is new.",
+          "scores": {
+            "object_recognition": 0,
+            "condition_assessment": 1,
+            "json_format": 0,
+            "detail_level": 0
+          },
+          "time_sec": 32.0
+        },
+        {
+          "image": "hammer_claw",
+          "description": "클로 해머 (장도리)",
+          "response": "The image shows a single, upright, and oriented hammer lying on a wooden surface. The hammer is positioned diagonally across the image, with the handle extending from the top-left corner to the bottom-right corner. The handle is black with a textured grip, and the head of the hammer is grey with a metallic finish. The head of the hammer is angled slightly downward, suggesting it is being used to strike or pound something.\n\nThe wooden surface on which the hammer rests appears to be a medium-dark brown color, with visible grain patterns and some minor variations in the texture. The surface is not uniformly smooth but has a rough, natural look, indicating it might be a piece of wood or a weathered plank.\n\nThere is no additional information or context provided in the image, so it is not possible to determine the exact type of hammer or the specific purpose of the wooden surface. However, the presence of the hammer and the wooden surface suggests that the image is likely taken in a workshop or a carpentry setting, where such tools are commonly used.\n\nIn summary, the image depicts a single, upright hammer lying on a wooden surface, with no visible damage or wear. The wooden surface appears to be a medium-dark brown color, with visible grain patterns and minor variations in the texture.",
+          "scores": {
+            "object_recognition": 2,
+            "condition_assessment": 1,
+            "json_format": 0,
+            "detail_level": 2
+          },
+          "time_sec": 41.6
+        },
+        {
+          "image": "wrench_set",
+          "description": "렌치/스패너 세트",
+          "response": "Conditions: {\"item\": \"condition\"}",
+          "scores": {
+            "object_recognition": 0,
+            "condition_assessment": 0,
+            "json_format": 3,
+            "detail_level": 0
+          },
+          "time_sec": 32.12
+        },
+        {
+          "image": "worker_with_gloves",
+          "description": "작업장갑 착용 작업자",
+          "response": "The condition of the equipment is new.",
+          "scores": {
+            "object_recognition": 0,
+            "condition_assessment": 1,
+            "json_format": 0,
+            "detail_level": 0
+          },
+          "time_sec": 31.82
+        }
+      ],
+      "total_scores": {
+        "object_recognition": 2,
+        "condition_assessment": 4,
+        "json_format": 3,
+        "detail_level": 2
+      },
+      "avg_scores": {
+        "object_recognition": 0.4,
+        "condition_assessment": 0.8,
+        "json_format": 0.6,
+        "detail_level": 0.4
+      }
+    }
+  ]
+}

@@ -1,0 +1,315 @@
+{
+  "benchmark_info": {
+    "timestamp": "2026-02-26T14:36:48.456698",
+    "device": "cpu",
+    "num_images": 6,
+    "num_models": 2,
+    "prompts": [
+      "object_recognition",
+      "damage_detection",
+      "structured_json"
+    ]
+  },
+  "images": [
+    "synthetic_boots",
+    "synthetic_gloves",
+    "synthetic_hammer",
+    "synthetic_hammer_rusty",
+    "synthetic_hardhat",
+    "synthetic_hardhat_cracked"
+  ],
+  "results": [
+    {
+      "model": "SmolVLM-256M",
+      "model_id": "HuggingFaceTB/SmolVLM-256M-Instruct",
+      "device": "cpu",
+      "tests": [
+        {
+          "image": "synthetic_boots",
+          "prompt": "object_recognition",
+          "response": "Dark Brown",
+          "time_sec": 5.72,
+          "success": true
+        },
+        {
+          "image": "synthetic_boots",
+          "prompt": "damage_detection",
+          "response": "Answer: 3",
+          "time_sec": 5.48,
+          "success": true
+        },
+        {
+          "image": "synthetic_boots",
+          "prompt": "structured_json",
+          "response": "The image shows a construction equipment such as a hardhat, boots, gloves, and a tool. The hardhat is a standard type of hardhat used for protection and protection of the head. The boots are designed for protection and are typically worn on the feet. The gloves are used for protection and are typically worn on the hands. The tool is a hammer or screwdriver, and it is used for cutting or assembling materials.",
+          "time_sec": 7.47,
+          "success": true
+        },
+        {
+          "image": "synthetic_gloves",
+          "prompt": "object_recognition",
+          "response": "Blue",
+          "time_sec": 5.32,
+          "success": true
+        },
+        {
+          "image": "synthetic_gloves",
+          "prompt": "damage_detection",
+          "response": "손상 위치 (상단/중앙/하단)",
+          "time_sec": 6.24,
+          "success": true
+        },
+        {
+          "image": "synthetic_gloves",
+          "prompt": "structured_json",
+          "response": "The image shows a construction equipment with a blue color. The object is a hardhat or boots. The hardhat is blue in color and has a rectangular shape. It has a flat top and a flat bottom. The top of the hardhat has a small, rounded notch. The bottom of the hardhat has a flat, rounded notch. The hardhat is made of a material that is likely made of plastic or a similar material.\n\nThe hardhat is designed to protect the wearer from the sun and rain. It has a protective brim that covers the head and",
+          "time_sec": 12.68,
+          "success": true
+        },
+        {
+          "image": "synthetic_hammer",
+          "prompt": "object_recognition",
+          "response": "유형: (안전모/안전화/장갑/공구 중 선택)",
+          "time_sec": 6.55,
+          "success": true
+        },
+        {
+          "image": "synthetic_hammer",
+          "prompt": "damage_detection",
+          "response": "Answer: [1, 물체 종류, 손상 유무, 손상 유무, 손상 위치, 손상 심각, 사용 가능 여부, 사용 가능 여부, 사용 가능 여부, 사용 가능 여부, 사용 가능 여부, 사용 가능 여부, 사용 가능 여부, 사용 가능 여부, 사용 가능 여부, 사용 가능 여부, 사용 가능 여부, 사용 가능 여부, 사용 가능 여",
+          "time_sec": 12.9,
+          "success": true
+        },
+        {
+          "image": "synthetic_hammer",
+          "prompt": "structured_json",
+          "response": "The image shows a construction equipment image with a blue background. The image is a simple, flat, and uncluttered representation of a hardhat or boot. The hardhat or boot is positioned horizontally and is the only object in the image. The hardhat or boot is blue in color and has a rectangular shape. The top of the hardhat or boot is slightly curved, and the bottom is flat.\n\nThe image does not contain any other objects, text, or images. The focus is solely on the hardhat or boot. The image is a",
+          "time_sec": 12.48,
+          "success": true
+        },
+        {
+          "image": "synthetic_hammer_rusty",
+          "prompt": "object_recognition",
+          "response": "Blue",
+          "time_sec": 5.02,
+          "success": true
+        },
+        {
+          "image": "synthetic_hammer_rusty",
+          "prompt": "damage_detection",
+          "response": "Answer: 3",
+          "time_sec": 5.2,
+          "success": true
+        },
+        {
+          "image": "synthetic_hammer_rusty",
+          "prompt": "structured_json",
+          "response": "The image shows a construction equipment image with a blue rectangular box on the right side. The box is labeled \"T\" and has a blue border. The box is positioned on a plain white background.",
+          "time_sec": 6.0,
+          "success": true
+        },
+        {
+          "image": "synthetic_hardhat",
+          "prompt": "object_recognition",
+          "response": "The circle is blue.",
+          "time_sec": 5.17,
+          "success": true
+        },
+        {
+          "image": "synthetic_hardhat",
+          "prompt": "damage_detection",
+          "response": "The image represents a simple line diagram, which is a type of diagram used to illustrate the relationship between different variables. The line is a circle, and it is drawn horizontally across the diagram. The line is a straight line, and it is positioned at the center of the circle. The line is not curved, and it does not intersect any other objects.\n\nThe diagram is labeled with the following labels:\n- **Blue circle**: The line represents the variable \"x\" (x-axis).\n- **Black line**: The line r",
+          "time_sec": 12.31,
+          "success": true
+        },
+        {
+          "image": "synthetic_hardhat",
+          "prompt": "structured_json",
+          "response": "Answer: [[\"new|good|fair|poor|damaged\"]]",
+          "time_sec": 5.68,
+          "success": true
+        },
+        {
+          "image": "synthetic_hardhat_cracked",
+          "prompt": "object_recognition",
+          "response": "유형: (안전모/안전화/장갑/공구 중 선택)",
+          "time_sec": 6.58,
+          "success": true
+        },
+        {
+          "image": "synthetic_hardhat_cracked",
+          "prompt": "damage_detection",
+          "response": "확인 항목: 1",
+          "time_sec": 5.7,
+          "success": true
+        },
+        {
+          "image": "synthetic_hardhat_cracked",
+          "prompt": "structured_json",
+          "response": "{\n    \"object\": [\n        {\n            \"name\": \"new|good|fair|poor|damaged|\",\n            \"type\": \"damage type\"\n        },\n        {\n            \"name\": \"new|good|fair|poor|damaged|\",\n            \"type\": \"damage type\"\n        }\n    ],\n    \"damages\": [\n        {\n            \"name\": \"new|good|fair|poor|damaged|\",\n            \"type\": \"damage type\"\n        },\n        {\n            \"name\": \"new|good|fair|poor|damaged|\",\n            \"type\": \"damage type\"\n        }\n    ]\n}",
+          "time_sec": 8.68,
+          "success": true
+        }
+      ],
+      "summary": {
+        "load_time_sec": 6.17,
+        "total_tests": 18,
+        "successful_tests": 18,
+        "success_rate": 100.0,
+        "avg_time_sec": 7.51,
+        "total_time_sec": 135.17
+      },
+      "scores": {
+        "object_recognition": 2,
+        "damage_detection": 2,
+        "json_output": 1
+      }
+    },
+    {
+      "model": "SmolVLM-500M",
+      "model_id": "HuggingFaceTB/SmolVLM-500M-Instruct",
+      "device": "cpu",
+      "tests": [
+        {
+          "image": "synthetic_boots",
+          "prompt": "object_recognition",
+          "response": "물체 이름: 무성\n- 유형: 안전모\n- 색상: 안전모",
+          "time_sec": 8.38,
+          "success": true
+        },
+        {
+          "image": "synthetic_boots",
+          "prompt": "damage_detection",
+          "response": "확인 항목:\n1. 물체 종류\n2. 손상 유무 (있음/없음)\n3. 손상 유형 (균열, 스크래치, 변색, 마모, 녹 등)\n4. 손상 심각도 (경미/보통/심각)\n5. 사용 가능 여부 (가능/점검필요/교체필요)",
+          "time_sec": 15.22,
+          "success": true
+        },
+        {
+          "image": "synthetic_boots",
+          "prompt": "structured_json",
+          "response": "{\n    \"object\": {\n        \"name\": \"object name\",\n        \"type\": \"hardhat|boots|gloves|tool\",\n        \"condition\": \"new|good|fair|poor|damaged\",\n        \"damages\": [\n            {\n                \"type\": \"damage type\",\n                \"severity\": \"minor\"\n            },\n            {\n                \"type\": \"damage type\",\n                \"severity\": \"minor\"\n            }\n        ]\n    }\n}",
+          "time_sec": 10.26,
+          "success": true
+        },
+        {
+          "image": "synthetic_gloves",
+          "prompt": "object_recognition",
+          "response": "물체 이름: 물체 이름: 물체 이름: 물체 이름: 물체 이름: 물체 이름: 물체 이름: 물체 이름: 물체 이름: 물체 이름: 물체 이름: 물체 이름: 물체 이름: 물체 이름: 물체 이름: 물체 이름: 물체 이름: 물체 이름: 물체 이름: 물체 이름: 물체 이름: 물체 이름: 물체 이름: �",
+          "time_sec": 19.03,
+          "success": true
+        },
+        {
+          "image": "synthetic_gloves",
+          "prompt": "damage_detection",
+          "response": "1. 물체 종류\n2. 손상 유무 (있음/없음)\n3. 손상 유형 (균열, 스크래치, 변색, 마모, 녹 등)\n4. 손상 심각도 (경미/보통/심각)\n5. 사용 가는 여부 (가능/점검필요/교체필요)",
+          "time_sec": 14.98,
+          "success": true
+        },
+        {
+          "image": "synthetic_gloves",
+          "prompt": "structured_json",
+          "response": "{\n    \"object\": {\n        \"name\": \"object name\",\n        \"type\": \"hardhat|boots|gloves|tool\",\n        \"condition\": {\n            \"overall\": \"new|good|fair|poor|damaged\",\n            \"usable\": true\n        }\n    }\n}",
+          "time_sec": 8.17,
+          "success": true
+        },
+        {
+          "image": "synthetic_hammer",
+          "prompt": "object_recognition",
+          "response": "물체 이름: 무지\n- 유형: 안전모\n- 색상: 무지.",
+          "time_sec": 8.03,
+          "success": true
+        },
+        {
+          "image": "synthetic_hammer",
+          "prompt": "damage_detection",
+          "response": "확인 항목:\n1. 물체 종류\n2. 손상 유무 (있음/없음)\n3. 손상 유형 (균열, 스크래치, 변색, 마모, 녹 등)\n4. 손상 위치 (상단/중앙/하단)\n5. 손상 심각도 (경미/보통/심각)\n6. 사용 가능 여부 (가능/점검필요/교체필요)",
+          "time_sec": 16.17,
+          "success": true
+        },
+        {
+          "image": "synthetic_hammer",
+          "prompt": "structured_json",
+          "response": "{\n    \"object\": {\n        \"name\": \"object name\",\n        \"type\": \"hardhat|boots|gloves|tool\",\n        \"condition\": {\n            \"overall\": \"new|good|fair|poor|damaged\",\n            \"usable\": true\n        },\n        \"damages\": [\n            {\n                \"type\": \"damage type\",\n                \"severity\": \"minor\"\n            },\n            {\n                \"type\": \"damage type\",\n                \"severity\": \"moderate\"\n            },\n            {\n                \"type\": \"damage type\",\n       ",
+          "time_sec": 11.67,
+          "success": true
+        },
+        {
+          "image": "synthetic_hammer_rusty",
+          "prompt": "object_recognition",
+          "response": "물체 이름: 무지\n- 유형: 안전모\n- 색상: 무지",
+          "time_sec": 8.21,
+          "success": true
+        },
+        {
+          "image": "synthetic_hammer_rusty",
+          "prompt": "damage_detection",
+          "response": "확인 항목:\n1. 물체 종류\n2. 손상 유무 (있음/없음)\n3. 손상 유형 (균열, 스크래치, 변색, 마모, 녹 등)\n4. 손상 심각도 (경미/보통/심각)\n5. 사용 가능 여부 (가능/점검필요/교체필요)",
+          "time_sec": 15.36,
+          "success": true
+        },
+        {
+          "image": "synthetic_hammer_rusty",
+          "prompt": "structured_json",
+          "response": "{\n    \"object\": {\n        \"name\": \"object name\",\n        \"type\": \"hardhat|boots|gloves|tool\",\n        \"condition\": {\n            \"overall\": \"new|good|fair|poor|damaged\",\n            \"usable\": true\n        },\n        \"damages\": [\n            {\n                \"type\": \"damage type\",\n                \"severity\": \"minor\"\n            },\n            {\n                \"type\": \"damage type\",\n                \"severity\": \"moderate\"\n            },\n            {\n                \"type\": \"damage type\",\n       ",
+          "time_sec": 11.78,
+          "success": true
+        },
+        {
+          "image": "synthetic_hardhat",
+          "prompt": "object_recognition",
+          "response": "물체 이름: 물체 이름: (안전모/안전화/장갑/공구 중 선택)",
+          "time_sec": 8.93,
+          "success": true
+        },
+        {
+          "image": "synthetic_hardhat",
+          "prompt": "damage_detection",
+          "response": "1. 물체 종류\n2. 손상 유무 (있음/없음)\n3. 손상 유형 (균열, 스크래치, 변색, 마모, 녹 등)\n4. 손상 심각도 (경미/보통/심각)\n5. 사용 가는 여부 (가능/점검필요/교체필요)",
+          "time_sec": 13.72,
+          "success": true
+        },
+        {
+          "image": "synthetic_hardhat",
+          "prompt": "structured_json",
+          "response": "{\n    \"name\": \"object name\",\n    \"type\": \"hardhat|boots|gloves|tool\",\n    \"condition\": {\n        \"overall\": \"new|good|fair|poor|damaged\",\n        \"usable\": true\n    },\n    \"damages\": [\n        {\n            \"type\": \"damage type\",\n            \"severity\": \"minor\"\n        }\n    ]\n}",
+          "time_sec": 9.15,
+          "success": true
+        },
+        {
+          "image": "synthetic_hardhat_cracked",
+          "prompt": "object_recognition",
+          "response": "한국어: (안전모/안전화/장갑/공구 중 선택)",
+          "time_sec": 7.98,
+          "success": true
+        },
+        {
+          "image": "synthetic_hardhat_cracked",
+          "prompt": "damage_detection",
+          "response": "1. 물체 종류\n2. 손상 유무 (있음/없음)\n3. 손상 유형 (균열, 스크래치, 변색, 마모, 녹 등)\n4. 손상 심각도 (경미/보통/심각)\n5. 사용 가는 여부 (가능/점검필요/교체필요)",
+          "time_sec": 14.13,
+          "success": true
+        },
+        {
+          "image": "synthetic_hardhat_cracked",
+          "prompt": "structured_json",
+          "response": "{\n    \"object\": {\n        \"name\": \"object name\",\n        \"type\": \"hardhat|boots|gloves|tool\",\n        \"condition\": {\n            \"overall\": \"new|good|fair|poor|damaged\",\n            \"usable\": true\n        },\n        \"damages\": [\n            {\n                \"type\": \"damage type\",\n                \"severity\": \"minor\"\n            },\n            {\n                \"type\": \"damage type\",\n                \"severity\": \"moderate\"\n            },\n            {\n                \"type\": \"damage type\",\n       ",
+          "time_sec": 11.23,
+          "success": true
+        }
+      ],
+      "summary": {
+        "load_time_sec": 5.61,
+        "total_tests": 18,
+        "successful_tests": 18,
+        "success_rate": 100.0,
+        "avg_time_sec": 11.8,
+        "total_time_sec": 212.4
+      },
+      "scores": {
+        "object_recognition": 5,
+        "damage_detection": 6,
+        "json_output": 3
+      }
+    }
+  ]
+}
